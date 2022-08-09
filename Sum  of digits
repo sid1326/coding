@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int num;
+    int unit, tens, hundredth;
+    printf("Enter the desired number = ");
+    scanf("%d",&num);
+    unit = num % 10;
+    tens = (num / 10 ) % 10;
+    hundredth = num / 100;
+    printf("The total sum of the digits of the given 3 digit number = %d", unit + tens + hundredth);
+
+    return(0);
+
+}
+
+
