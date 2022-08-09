@@ -10,3 +10,21 @@ int main()
     return (0);
 }
 
+OR
+
+#include <stdio.h>
+int main()
+{
+    float num;
+    int integer;
+    float decimal;
+    printf("Enter the desired number = ");
+    scanf("%f",&num);
+    integer = (int)num;
+    decimal = num - (int)num;
+    printf("Integer part = %d\n", integer);
+    printf("Decimal part of given number = %f",decimal);
+
+    return(0);
+
+}
