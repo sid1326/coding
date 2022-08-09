@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int S;
+    int H;
+    int TS;
+    printf(" Total hours worked = ");
+    scanf(" %d",&H);
+    printf("Salary per hour = ");
+    scanf("%d",&S);
+    TS = S * H;
+    printf(" totoal salary of the employee = %d", TS);
+    return (0);
+}    
+    
+    
+    
