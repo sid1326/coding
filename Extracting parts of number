@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+    double number;
+    printf("The desired number = ");
+    scanf("%lf",&number);
+    printf("The integral part = %d\n",(int)number);
+
+    printf("The decimal part = %lf\n",number - (int)number);
+    return (0);
+}
+
