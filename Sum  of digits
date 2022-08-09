@@ -5,8 +5,7 @@ int main()
     int unit, tens, hundredth;
     printf("Enter the desired number = ");
     scanf("%d",&num);
-    /* 225 % 10 implies 225/10 and then digit in the tenth place that is 5
-    - 225 % 100 implies 225/100 = 2.25 and upto hundredth place implies 25 */
+    /* % implies remainder => 535 % 10 is 5 whereas 535/100 = 53
     unit = num % 10;
     tens = (num / 10 ) % 10;
     hundredth = num / 100;
