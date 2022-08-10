@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+// math.h helps you include various mathematical formulae
+int main()
+{
+    float x1,y1,x2,y2;
+    float distance;
+    printf ("Enter the value of x1 = ");
+    scanf("%f",&x1);
+    printf ("Enter the value of x2 = ");
+    scanf("%f",&x2);
+    printf ("Enter the value of y1 = ");
+    scanf("%f",&y1);
+    printf ("Enter the value of y2 = ");
+    scanf("%f",&y2);
+    distance = sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1 - y2));
+    printf("The distance between the two points = %f",distance);
+
+
+
+
+    return(0);
