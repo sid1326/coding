@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 // math.h helps you include various mathematical formulae
+// in case of relational operators == implies equals to
 int main()
 {
     int grade;
