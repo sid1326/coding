@@ -2,6 +2,7 @@
 #include <math.h>
 // math.h helps you include various mathematical formulae
 // in case of relational operators == implies equals to
+// != implies not equals to
 int main()
 {
     int grade;
