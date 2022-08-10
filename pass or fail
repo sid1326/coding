@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+// math.h helps you include various mathematical formulae
+int main()
+{
+    int grade;
+    printf("Enter  your grade : ");
+    scanf("%d",&grade);
+    if (grade >= 60) printf("CONGRATULATIONS..YOU ARE PROMOTED\n");
+    else printf("FAILED..BETTER LUCK NEXT TIME\n");
+        return (0);
+}
