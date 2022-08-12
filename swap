@@ -1,0 +1,15 @@
+//swapping numbers contained in a and b 
+//simply without using any third variable
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("Enter the first number = a =  ");
+    scanf("%d",&a);
+    printf("Enter the second number = b =  ");
+    scanf("%d",&b);
+    printf( "b = %d\n",a);
+    printf("a = %d",b);
+    return 0 ;
+
+}
