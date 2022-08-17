@@ -2,32 +2,31 @@
 #include<stdlib.h>
 int main()
 {
-    int num1 , num2 ;
-    char operation;
-    printf("Select the type of operation you want to use ('+', '-' , '/', '*') :  ");
-    scanf("%c", &operation);
-    printf("Enter the first number : ");
-    scanf("%d", &num1);
-    printf("Enter the second number : ");
-    scanf("%d", &num2);
-    switch(operation)
-    {
-    case '+' :
-        printf("%d %c %d = %d\n", num1, operation, num2,  num1 + num2 );
-        break;
-    case '-' :
-        printf("%d  %c  %d = %d", num1,operation,num2,num1 - num2);
-        break;
-    case '*' :
-         printf("%d  %c  %d = %d",  num1, operation, num2, num1 * num2);
-         break;
-    case ' %' :
-        printf("%d %c %d = %d",num1, operation,  num2, num1/num2);
-        break;
-    default :
-        printf ("Error");
-        break;
-}
-    return (0);
-}
 
+    int num1, num2;
+    char operation;
+    printf("Enter the mathematical operation you want to use ( '+', '-', '/', '%'.....) : ");
+    scanf("%c",&operation);
+    printf("Enter the first number = ");
+    scanf("%d",&num1);
+    printf("Enter the second number = ");
+    scanf("%d",&num2);
+        switch(operation)
+    {
+        case '+' : printf("%d %c %d = %d ", num1, operation, num2,  num1 + num2);
+        break;
+        case '-' : printf("%d %c %d = %d ", num1, operation, num2, num1 - num2);
+        break;
+        case '/' : if (num2 != 0)  printf("%d %c %d = %0.1f ", num1, operation, num2, (double)num1 / num2); 
+        //having num2 = 0 would result in invalid output.
+        else printf("Error, check the denominator again !");
+        break;
+        case '*' : printf("%d %c %d  = %d", num1, operation, num2, num1 * num2);
+        break;
+        case '%' : printf("%d %c %d = %d ", num1, operation, num2, num1 % num2);
+        break;
+        default : printf("Try another operation\n");
+        break;
+    }
+    return 0;
+}
