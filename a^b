@@ -1,0 +1,18 @@
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main()
+{
+    double a, b;
+ long double result;
+printf("Enter the first number = a = ");
+scanf("%lf", &a);
+printf("Enter the first number = b = ");
+scanf("%lf", &b);
+
+result = pow(a,b);
+
+printf("The required result = %lf", result);
+return 0;
+}
