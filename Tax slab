@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+
+
+    int income;
+    char version;
+    char old, new;
+    printf("Please enter '-' for old and '+' for new tax calculation: ");
+    scanf("%c", &version);
+    printf("Enter the total income : ");
+    scanf("%d", &income);
+    switch (version)
+   {
+       case '-' :     if (income <= 250000)                       printf("No tax to be paid");
+                        if (income > 250000 && income <= 500000)    printf ("Tax to be paid is %0.2f and rebate is %0.2f thus final amount to be paid is Rs 0", 0.05 * (income - 250000),0.05 * (income - 250000) );
+                        if (income > 500000 && income <= 1000000)   printf("Tax to be paid is %0.2f", 0.2* (income - 500000) + (0.05 * 250000));
+       break;
+
+
+      case '+'  :    if (income <= 250000)                        printf("No tax to be paid");
+            if (income > 250000 && income <= 500000)                printf ("Tax to be paid is %0.2f and rebate is %0.2f thus final amount to be paid is Rs 0", 0.05 * (income - 250000),0.05 * (income - 250000) );
+            if (income > 500000 && income <= 750000)                printf("Tax to be paid is %0.2f", 0.1* (income - 500000) + (0.05 * 250000));
+            if (income >750000 && income <=1000000 )                printf("tax to be paid is %0.2f", (0.15 * (income - 750000))  +   0.1* (250000) + (0.05 * 250000));
+      break;
+   }
+
+return 0;
+
+
+}
