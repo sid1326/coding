@@ -1,0 +1,14 @@
+//Receive a 2 digit number
+// Finds and prints maximum digit
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int num;
+    printf("Enter the two digit number: ");
+    scanf("%d", &num);
+    if((num % 10) > (num / 10))
+        printf("The unit digit i.e. %d is the higher number", num % 10);
+    else printf("The tens digit i.e. %d is the higher number", num / 10);
+    return 0;
+}
