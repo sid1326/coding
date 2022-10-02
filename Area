@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int l,w,area;
+    printf("Enter the length(in cm) : ");
+    scanf("%d", &l);
+    printf("Enter the width(in cm) : ");
+    scanf("%d", &w);
+    area = l * w;
+    printf("The required area of the rectangle : %d sq. cm",area);
+    return 0;
+
+}
+
+
+
+
+
+
+
+
