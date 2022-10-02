@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int num, unit, tens;
+    printf("Enter the two digit number : ");
+    scanf("%d",&num);
+    unit = num % 10;
+    tens = num / 10;
+    if ( unit > tens) printf("The greater among the digits is the unit number i.e %d", unit);
+    else printf("The greater aamong the digits is the tens number i.e %d", tens);
+    return 0;
+}
