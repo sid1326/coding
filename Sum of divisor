@@ -1,0 +1,25 @@
+#include<stdlib.h>
+#include<stdio.h>
+int divisor(int num)
+{
+    int i;
+    int sum = 1;
+    if (num ==1)
+    {
+        return num;
+    }
+    for(i = 2; i<= num; i++)
+    {
+        if(num % i==0)
+        sum = sum + i;
+    }
+    return sum;
+}
+int main()
+{
+    int mynum;
+    printf("Enter the number : ");
+    scanf("%d", &mynum);
+    printf("The required sum of the divisors is %d", divisor(mynum));
+    return 0;
+}
